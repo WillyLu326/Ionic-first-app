@@ -5,5 +5,9 @@
 </ion-header>
 
 <ion-content padding>
-    Hi, good evening {{ name }}
+    <p>Hi, good evening {{ name }}</p>
+    
+    <button ion-button (click)="onGoBack()">Go Back</button>
+    <br>    
+    <button ion-button (click)="onGoToRoot()">Go To Root</button>
 </ion-content>
