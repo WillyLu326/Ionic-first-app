@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { UsersPage } from '../users/users';
+import { ShopPage } from '../shop/shop';
 
 @Component({
   selector: 'page-home',
@@ -16,6 +17,10 @@ export class HomePage {
 
   onGoToUsersPage() {
     this.navCtrl.push(UsersPage);
+  }
+
+  onGoToShopPage() {
+    this.navCtrl.push(ShopPage);
   }
 
 }
