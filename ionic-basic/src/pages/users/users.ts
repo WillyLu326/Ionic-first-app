@@ -9,9 +9,8 @@ import { UserPage } from './user/user';
 })
 export class UsersPage {
 
+  userPage = UserPage;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  onLoadUserPage(name: string) {
-    this.navCtrl.push(UserPage, { username: name });
-  }
 }

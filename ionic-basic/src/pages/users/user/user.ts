@@ -12,7 +12,7 @@ export class UserPage implements OnInit {
     constructor(private navCtrl: NavController, private navParams: NavParams) { }
 
     ngOnInit() {
-        this.name = this.navParams.get('username');
+        this.name = this.navParams.data['username'];
     }
 
     onGoBack() {

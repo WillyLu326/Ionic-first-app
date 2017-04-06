@@ -5,9 +5,9 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="onLoadUserPage('Willy')">User: Willy</button>
+  <button ion-button [navPush]="userPage" [navParams]="{'username':'Willy'}">User: Willy</button>
   <hr>
-  <button ion-button (click)="onLoadUserPage('James')">User: James</button>
+  <button ion-button [navPush]="userPage" [navParams]="{'username':'James'}">User: James</button>
 </ion-content>
 
 <ion-footer padding>
