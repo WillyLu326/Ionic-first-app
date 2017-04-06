@@ -7,9 +7,9 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="onGoToUsersPage()">Users</button>
+  <button ion-button [navPush]="usersPage">Users</button>
 
   <br>
 
-  <button ion-button (click)="onGoToShopPage()">Shop</button>
+  <button ion-button [navPush]="shopPage">Shop</button>
 </ion-content>

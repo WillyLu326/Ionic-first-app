@@ -11,16 +11,11 @@ import { ShopPage } from '../shop/shop';
 })
 export class HomePage {
 
+  usersPage = UsersPage;
+  shopPage = ShopPage;
+
   constructor(public navCtrl: NavController) {
     
-  }
-
-  onGoToUsersPage() {
-    this.navCtrl.push(UsersPage);
-  }
-
-  onGoToShopPage() {
-    this.navCtrl.push(ShopPage);
   }
 
 }
