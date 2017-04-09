@@ -14,7 +14,6 @@ export class UserPage implements OnInit {
     ngOnInit() {
         this.name = this.navParams.data['username'];
     }
-    // ionic
     onGoToRoot() {
         this.navCtrl.popToRoot();
     }
